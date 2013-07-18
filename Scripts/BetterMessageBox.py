@@ -1,4 +1,5 @@
 from reaper_python import *
+
 '''
 Possible Questions:
 0 = Ok
@@ -29,7 +30,7 @@ def RetryCancel(title, comment):
 '''
 o = Ok
 oc = Ok Cancel
-ari = Abort Retry Cancel
+arc = Abort Retry Cancel
 ync = Yes No Cancel
 yn = Yes No
 rc = Retry Cancel
@@ -39,7 +40,7 @@ def MB(title, comment, choice):
 		return Ok(title, comment)
 	elif choice.lower() == "oc":
 		return OkCancel(title, comment)
-	elif choice.lower() == "ari":
+	elif choice.lower() == "arc":
 		return AbortRetryIgnore(title, comment)
 	elif choice.lower() == "ync":
 		return YesNoCancel(title, comment)

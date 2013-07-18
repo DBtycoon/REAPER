@@ -1,6 +1,6 @@
 from reaper_python import *
-ourProject = 0
 
+ourProject = 0
 answer = RPR_MB("Do you want to start over?", "Clear Project", 4)
 
 if answer==6:
